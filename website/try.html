@@ -154,6 +154,74 @@
     }
 
 
+    .example-box {
+      width: 250px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+      background-color: #f9f9f9;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer; /* Indicates interactivity */
+    }
+
+    .example-box:hover {
+      transform: translateY(-5px); /* Slight lift effect */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+      background-color: #f0f8ff; /* Light blue background */
+    }
+
+
+    .example-box h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #003366;
+    }
+
+    .example-box p#etaValue {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007fa4;
+    }
+
+
+
+    .eta-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007fa4;
+}
+
+  .prediction-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f6ff;
+    border-left: 5px solid #007fa4;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .prediction-box h4 {
+    font-size: 1.3rem;
+    color: #003366;
+  }
+
+  .prediction-box p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #005580;
+  }
+
+  #prediction-container {
+    display: none;
+  }
+
+
+
+
+
+
     
 
   </style>
@@ -300,6 +368,156 @@
 </section>
 
 
+       <!-- Charts Section 1 -->
+        <section id="chartsSection1" style="display: none;">
+          <h2>Route Analysis - Example 1</h2>
+          <div class="container">
+            <div class="example-container">
+              <!-- Example Box 1: Bar Chart -->
+              <div class="example-box">
+                <img src="images/bar_chart1.png" alt="Bar Chart">
+                <p>Traffic Analysis - Bar Chart</p>
+              </div>
+
+              <!-- Example Box 2: Line Chart -->
+              <div class="example-box">
+                <img src="images/line_chart1.png" alt="Line Chart">
+                <p>Travel Time Analysis - Line Chart</p>
+              </div>
+
+              <!-- Example Box 3: ETA Display -->
+              <div class="example-box">
+                <h3>Current ETA</h3>
+                <p id="etaValue1" class="eta-display">-- mins</p>
+              </div>
+            </div>
+
+            <!-- Future ETA Prediction Section for Example 1 -->
+            <div id="prediction-container1" class="prediction-container">
+              <h3>Predict Future ETA</h3>
+              <div class="form-group">
+                <label for="futureDate1">Select a Date:</label>
+                <input type="date" id="futureDate1" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="futureTime1">Select a Time:</label>
+                <input type="time" id="futureTime1" class="form-control">
+              </div>
+
+              <button id="predictBtn1" class="btn btn-submit">Predict ETA</button>
+
+              <div id="predictedETABox1" class="prediction-box" style="display: none;">
+                <h4>Predicted ETA</h4>
+                <p id="predictedETA1"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Charts Section 2 -->
+        <section id="chartsSection2" style="display: none;">
+          <h2>Route Analysis - Example 2</h2>
+          <div class="container">
+            <div class="example-container">
+              <!-- Example Box 1: Bar Chart -->
+              <div class="example-box">
+                <img src="images/bar_chart2.png" alt="Bar Chart">
+                <p>Traffic Analysis - Bar Chart</p>
+              </div>
+
+              <!-- Example Box 2: Line Chart -->
+              <div class="example-box">
+                <img src="images/line_chart2.png" alt="Line Chart">
+                <p>Travel Time Analysis - Line Chart</p>
+              </div>
+
+              <!-- Example Box 3: ETA Display -->
+              <div class="example-box">
+                <h3>Current ETA</h3>
+                <p id="etaValue2" class="eta-display">-- mins</p>
+              </div>
+            </div>
+
+            <!-- Future ETA Prediction Section for Example 2 -->
+            <div id="prediction-container2" class="prediction-container">
+              <h3>Predict Future ETA</h3>
+              <div class="form-group">
+                <label for="futureDate2">Select a Date:</label>
+                <input type="date" id="futureDate2" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="futureTime2">Select a Time:</label>
+                <input type="time" id="futureTime2" class="form-control">
+              </div>
+
+              <button id="predictBtn2" class="btn btn-submit">Predict ETA</button>
+
+              <div id="predictedETABox2" class="prediction-box" style="display: none;">
+                <h4>Predicted ETA</h4>
+                <p id="predictedETA2"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Charts Section 3 -->
+        <section id="chartsSection3" style="display: none;">
+          <h2>Route Analysis - Example 3</h2>
+          <div class="container">
+            <div class="example-container">
+              <!-- Example Box 1: Bar Chart -->
+              <div class="example-box">
+                <img src="images/bar_chart3.png" alt="Bar Chart">
+                <p>Traffic Analysis - Bar Chart</p>
+              </div>
+
+              <!-- Example Box 2: Line Chart -->
+              <div class="example-box">
+                <img src="images/line_chart3.png" alt="Line Chart">
+                <p>Travel Time Analysis - Line Chart</p>
+              </div>
+
+              <!-- Example Box 3: ETA Display -->
+              <div class="example-box">
+                <h3>Current ETA</h3>
+                <p id="etaValue3" class="eta-display">-- mins</p>
+              </div>
+            </div>
+
+            <!-- Future ETA Prediction Section for Example 3 -->
+            <div id="prediction-container3" class="prediction-container">
+              <h3>Predict Future ETA</h3>
+              <div class="form-group">
+                <label for="futureDate3">Select a Date:</label>
+                <input type="date" id="futureDate3" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="futureTime3">Select a Time:</label>
+                <input type="time" id="futureTime3" class="form-control">
+              </div>
+
+              <button id="predictBtn3" class="btn btn-submit">Predict ETA</button>
+
+              <div id="predictedETABox3" class="prediction-box" style="display: none;">
+                <h4>Predicted ETA</h4>
+                <p id="predictedETA3"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         
+        </div>
+      </section>
+
+
+
+
+
+
   <!-- footer section -->
   <section class="footer_section">
     <div class="container">
@@ -363,16 +581,16 @@
     
     // Set current year in footer
     document.getElementById("displayYear").textContent = new Date().getFullYear();
-
+  
     // Form submission handling
     routeForm.addEventListener('submit', function(event) {
       event.preventDefault();
-      
+  
       // Hide the form and show the "Route being tracked" section
       document.querySelector('.form-section').style.display = 'none';
       document.getElementById('trackingSection').style.display = 'block';
     });
-
+  
     // Show the examples when "See Examples" is clicked
     document.getElementById('seeExamplesBtn').addEventListener('click', function() {
       // Hide the "Route being tracked" section and show the example section
@@ -380,24 +598,105 @@
       document.getElementById('exampleSection').style.display = 'block';
       window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top for better UX
     });
-
+  
     // Form submission handling
     routeForm.addEventListener('submit', function(event) {
       event.preventDefault();
-
+  
       // Hide the form section
       document.querySelector('.form-section').style.display = 'none';
-
+  
       // Reduce hero section height to avoid pushing content down
       document.querySelector('.hero_area').style.minHeight = '35vh';
-
+  
       // Show the tracking section
       document.getElementById('trackingSection').style.display = 'block';
     });
+  
+    // Function to generate a random ETA between 10 and 60 minutes
+    function generateRandomETA() {
+      return Math.floor(Math.random() * (45 - 10 + 1)) + 13;
+    }
+  
+    // Function to generate a future predicted ETA between 15 and 90 minutes
+    function generatePredictedETA() {
+      return Math.floor(Math.random() * (45 - 15 + 1)) + 15;
+    }
+  
+    // Event listener for example boxes to show charts section
+    document.querySelectorAll('.example-box').forEach((box, index) => {
+      box.addEventListener('click', function() {
+        // Hide the example section
+        document.getElementById('exampleSection').style.display = 'none';
+        
+        // Show the respective chart section based on the clicked example
+        const chartSections = ['chartsSection1', 'chartsSection2', 'chartsSection3'];
+        const selectedSection = document.getElementById(chartSections[index]);
+        selectedSection.style.display = 'block';
+        
+        // Generate random ETA for each example
+        // Function to simulate generating a random ETA for each section
+function generateRandomETA() {
+  return Math.floor(Math.random() * 50) + 13; // Random ETA between 1 and 120 minutes
+}
 
+// Function to update the ETA value for each section
+    function updateRandomETA(sectionNumber) {
+      const etaValue = generateRandomETA();
+      document.getElementById(`etaValue${sectionNumber}`).textContent = `${etaValue} mins`;
+    }
 
+    // Update the ETA for all sections when the page loads or when needed
+    updateRandomETA(1); // For section 1
+    updateRandomETA(2); // For section 2
+    updateRandomETA(3); // For section 3
 
+        
+        // Show the "Predict Future ETA" box
+        document.getElementById('predictedETABox').style.display = 'block';
+        
+        // Smooth scroll to top for better UX
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  
+    // Function to simulate generating a predicted ETA
+      function generatePredictedETA() {
+        return Math.floor(Math.random() * 120) + 1; // Random ETA between 1 and 120 minutes
+      }
+
+      // Function to handle the prediction for each section
+      function handlePrediction(sectionNumber) {
+        const futureDate = document.getElementById(`futureDate${sectionNumber}`).value;
+        const futureTime = document.getElementById(`futureTime${sectionNumber}`).value;
+        const predictedETADisplay = document.getElementById(`predictedETA${sectionNumber}`);
+        const predictedETABox = document.getElementById(`predictedETABox${sectionNumber}`);
+        
+        if (futureDate && futureTime) {
+          const predictedETA = generatePredictedETA();
+          predictedETADisplay.innerHTML = `ETA for <b>${futureDate} at ${futureTime}</b>: <br><span style="font-size: 2rem; color: #007fa4;">${predictedETA} mins</span>`;
+          predictedETABox.style.display = 'block'; // Show the prediction box
+        } else {
+          alert("Please select both a date and time.");
+        }
+      }
+
+      // Event listeners for each of the three prediction sections
+      document.getElementById('predictBtn1').addEventListener('click', function() {
+        handlePrediction(1); // Handle prediction for section 1
+      });
+
+      document.getElementById('predictBtn2').addEventListener('click', function() {
+        handlePrediction(2); // Handle prediction for section 2
+      });
+
+      document.getElementById('predictBtn3').addEventListener('click', function() {
+        handlePrediction(3); // Handle prediction for section 3
+      });
+
+  
   </script>
+  
 
 </body>
 
