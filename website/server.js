@@ -10,9 +10,5 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/hello', (req, res) => {
-    res.send(path.join(__dirname, 'images/smart.png'));
-});
-
 
 module.exports = app;
