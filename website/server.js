@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/hello', (req, res) => {
-    res.send(path.join(__dirname, 'images/smart.png')));
+    res.send(path.join(__dirname, 'images/smart.png'));
 });
 
 
