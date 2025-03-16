@@ -4,14 +4,14 @@ const path = require('path');
 const app = express();
 
 // Serve static files from the same directory as server.js
-app.use(express.static(path.join(__dirname, '../Frontend')));
+app.use(express.static(path.join(__dirname, '../website')));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.get('/hello', (req, res) => {
-    res.send(__dirname);
+    res.send(path.join(__dirname, 'images/smart.png')));
 });
 
 
