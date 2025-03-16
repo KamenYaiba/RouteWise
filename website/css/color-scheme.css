@@ -1,0 +1,290 @@
+/* Updated Color Scheme */
+
+/* Primary Colors */
+:root {
+    --primary-blue: #1976D2;
+    --light-blue: #BBDEFB;
+    --dark-blue: #0D47A1;
+    --white: #FFFFFF;
+    --light-gray: #F5F7FA;
+    --very-light-blue: #F0F8FF;
+    --dark-gray: #333333;
+    --medium-gray: #666666;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--dark-gray);
+    background-color: var(--white);
+  }
+  
+  /* Header and Navigation */
+  .header_section {
+    background-color: var(--primary-blue);
+  }
+  
+  .navbar-brand span {
+    color: var(--white);
+  }
+  
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    color: var(--white);
+  }
+  
+  .custom_nav-container .navbar-nav .nav-item:hover .nav-link, 
+  .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    color: var(--light-blue);
+  }
+  
+  .custom_nav-container .nav_search-btn {
+    color: var(--white);
+  }
+  
+  .custom_nav-container .nav_search-btn:hover {
+    color: var(--light-blue);
+  }
+  
+  .custom_nav-container .navbar-toggler span,
+  .custom_nav-container .navbar-toggler span::before,
+  .custom_nav-container .navbar-toggler span::after {
+    background-color: var(--white);
+  }
+  
+  /* Hero Area */
+  .hero_area {
+    background: linear-gradient(130deg, var(--dark-blue), var(--primary-blue));
+  }
+  
+  /* Slider Section */
+  .slider_section .detail-box h1 {
+    color: var(--white);
+  }
+  
+  .slider_section .detail-box p {
+    color: var(--white);
+  }
+  
+  .slider_section .detail-box .btn-box .btn1 {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+  }
+  
+  .slider_section .detail-box .btn-box .btn1:hover {
+    background-color: var(--white);
+  }
+  
+  .slider_section .carousel-indicators li {
+    background-color: var(--white);
+  }
+  
+  .slider_section .carousel-indicators li.active {
+    background-color: var(--light-blue);
+  }
+  
+  /* Service Section */
+  .service_section .box {
+    background-color: var(--light-gray);
+  }
+  
+  .service_section .box .detail-box h5 {
+    color: var(--dark-blue);
+  }
+  
+  .service_section .box .detail-box a {
+    color: var(--primary-blue);
+  }
+  
+  .service_section .box .detail-box a:hover {
+    color: var(--dark-blue);
+  }
+  
+  .service_section .btn-box a {
+    background-color: var(--primary-blue);
+    color: var(--white);
+  }
+  
+  .service_section .btn-box a:hover {
+    background-color: var(--dark-blue);
+  }
+  
+  /* About Section */
+  .about_section {
+    background-color: var(--very-light-blue);
+    color: var(--dark-gray);
+  }
+  
+  .about_section .heading_container h2 span {
+    color: var(--primary-blue);
+  }
+  
+  .about_section .detail-box h3 {
+    color: var(--dark-blue);
+  }
+  
+  .about_section .detail-box a {
+    background-color: var(--primary-blue);
+    color: var(--white);
+  }
+  
+  .about_section .detail-box a:hover {
+    background-color: var(--dark-blue);
+  }
+  
+  /* Why Section */
+  .why_section .box .img-box {
+    border: 5px solid var(--primary-blue);
+  }
+  
+  .why_section .box .img-box img {
+    fill: var(--primary-blue);
+  }
+  
+  .why_section .box h5 {
+    color: var(--dark-blue);
+  }
+  
+  .why_section .btn-box a {
+    background-color: var(--primary-blue);
+    color: var(--white);
+  }
+  
+  .why_section .btn-box a:hover {
+    background-color: var(--dark-blue);
+  }
+  
+  /* Team Section */
+  .team_section {
+    background-color: var(--very-light-blue);
+    color: var(--dark-gray);
+  }
+  
+  .team_section .heading_container h2 span {
+    color: var(--primary-blue);
+  }
+  
+  .team_section .team_container .box {
+    background: linear-gradient(to bottom, var(--light-blue), var(--primary-blue));
+  }
+  
+  .team_section .team_container .box .img-box img {
+    border: 5px solid var(--white);
+  }
+  
+  .team_section .team_container .box .detail-box h5 {
+    color: var(--dark-blue);
+  }
+  
+  .team_section .team_container .box .social_box a {
+    color: var(--dark-gray);
+  }
+  
+  .team_section .team_container .box .social_box a:hover {
+    color: var(--dark-blue);
+  }
+  
+  /* Client Section */
+  .client_section .box .detail-box {
+    background-color: var(--white);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .client_section .box .client_id .client_info h6 {
+    color: var(--dark-blue);
+  }
+  
+  .client_section .box .client_id .client_info p {
+    color: var(--medium-gray);
+  }
+  
+  .client_section .box .detail-box i {
+    color: var(--primary-blue);
+  }
+  
+  .client_section .owl-carousel .owl-nav .owl-prev,
+  .client_section .owl-carousel .owl-nav .owl-next {
+    background-color: var(--white);
+    color: var(--dark-gray);
+  }
+  
+  .client_section .owl-carousel .owl-nav .owl-prev:hover,
+  .client_section .owl-carousel .owl-nav .owl-next:hover {
+    color: var(--primary-blue);
+  }
+  
+  /* Info Section */
+  .info_section {
+    background-color: var(--dark-blue);
+    color: var(--white);
+  }
+  
+  .info_section .info_contact .contact_link_box a {
+    color: var(--white);
+  }
+  
+  .info_section .info_contact .contact_link_box a:hover {
+    color: var(--light-blue);
+  }
+  
+  .info_section .info_social a {
+    color: var(--white);
+  }
+  
+  .info_section .info_social a:hover {
+    color: var(--light-blue);
+  }
+  
+  .info_section .info_links a {
+    color: var(--white);
+  }
+  
+  .info_section .info_links a:hover {
+    color: var(--light-blue);
+  }
+  
+  .info_section form button {
+    background-color: var(--primary-blue);
+    color: var(--white);
+  }
+  
+  .info_section form button:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+  }
+  
+  /* Footer Section */
+  .footer_section {
+    background-color: var(--white);
+  }
+  
+  .footer_section p {
+    color: var(--dark-gray);
+  }
+  
+  /* Headings Global */
+  .heading_container h2 {
+    color: var(--dark-gray);
+  }
+  
+  .heading_container h2 span {
+    color: var(--primary-blue);
+  }
+  
+  .heading_container p {
+    color: var(--medium-gray);
+  }
+  
+  /* Links */
+  a {
+    color: var(--primary-blue);
+  }
+  
+  a:hover {
+    color: var(--dark-blue);
+  }
+  
+  /* Update for responsive.css */
+  @media (max-width: 992px) {
+    .hero_area {
+      background: linear-gradient(130deg, var(--dark-blue), var(--primary-blue));
+    }
+  }

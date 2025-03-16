@@ -3,4 +3,5 @@ keys.py
 jobs_JSON
 __pycache__
 .idea
-
+venv
+website\node_modules
