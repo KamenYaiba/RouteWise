@@ -87,6 +87,75 @@
       background-color: #cccccc;
       cursor: not-allowed;
     }
+
+    #trackingSection h2 {
+  margin-top: 30px;
+  color: #003366;
+  }
+
+  
+    #exampleSection {
+    display: none; /* Hides the section initially */
+  }
+
+
+    #seeExamplesBtn {
+      background-color: #00bbf0;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+
+    #seeExamplesBtn:hover {
+      background-color: #007fa4;
+    }
+
+    .example-box {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .example-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .example-box p {
+      margin-top: 10px;
+    }
+
+    .example-container {
+      display: flex;
+      justify-content: center; /* Centers the boxes horizontally */
+      gap: 20px; /* Adds space between boxes */
+      flex-wrap: wrap; /* Ensures responsiveness on small screens */
+      margin-top: 20px;
+    }
+
+    .example-box {
+      width: 250px; /* Slightly bigger size */
+      height: auto; /* Height adjusts automatically */
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .example-box img {
+      width: 100%; /* Ensures image fills the box */
+      height: auto; /* Maintains aspect ratio */
+      border-radius: 8px;
+    }
+
+
+    
+
   </style>
 </head>
 
@@ -194,6 +263,43 @@
 
   </div>
 
+
+  <!-- Route Tracking Section -->
+<section id="trackingSection" style="display: none;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="text-center">
+          <h2>The route is now being tracked</h2>
+          <button class="btn btn-submit" id="seeExamplesBtn">See Examples</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Example Section -->
+<section id="exampleSection">
+  <h2>Example Routes</h2>
+  <div class="container">
+    <div class="example-container">
+      <div class="example-box">
+          <img src="images/example1.png" alt="Example 1">
+          <p>Route Name: work<br>Route ID: 673</p>
+      </div>
+      <div class="example-box">
+          <img src="images/example2.png" alt="Example 2">
+          <p>Route Name: Ali's House<br>Route ID: 645</p>
+      </div>
+      <div class="example-box">
+          <img src="images/example3.png" alt="Example 3">
+          <p>Route Name: Park<br>Route ID: 609</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   <!-- footer section -->
   <section class="footer_section">
     <div class="container">
@@ -257,6 +363,40 @@
     
     // Set current year in footer
     document.getElementById("displayYear").textContent = new Date().getFullYear();
+
+    // Form submission handling
+    routeForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      // Hide the form and show the "Route being tracked" section
+      document.querySelector('.form-section').style.display = 'none';
+      document.getElementById('trackingSection').style.display = 'block';
+    });
+
+    // Show the examples when "See Examples" is clicked
+    document.getElementById('seeExamplesBtn').addEventListener('click', function() {
+      // Hide the "Route being tracked" section and show the example section
+      document.getElementById('trackingSection').style.display = 'none';
+      document.getElementById('exampleSection').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top for better UX
+    });
+
+    // Form submission handling
+    routeForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Hide the form section
+      document.querySelector('.form-section').style.display = 'none';
+
+      // Reduce hero section height to avoid pushing content down
+      document.querySelector('.hero_area').style.minHeight = '35vh';
+
+      // Show the tracking section
+      document.getElementById('trackingSection').style.display = 'block';
+    });
+
+
+
   </script>
 
 </body>
