@@ -21,3 +21,18 @@
 - **🛣️ Alternative Route Suggestions:** Users will receive recommendations for less congested routes based on real-time traffic data.
 - **📈 Advanced Analytics Dashboard:** More in-depth visualizations, including traffic heatmaps and comparative analysis of route efficiency.
 
+## 🔧 **Technology Stack**
+
+- **Backend**:
+  - 🐍 Python
+  - ➗ NumPy
+  - 🟢 Node.js 
+  - 💻 Flask
+  - 🟠 Tensorflow
+
+- **Frontend**:
+  - 📄 HTML5 
+  - 🎨 CSS 
+  - ⚡ JavaScript 
+  - 📦 Bootstrap 
+
